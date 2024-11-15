@@ -175,7 +175,7 @@ int main()
     Node* root = createNode(chars_freq_v, nullptr, nullptr);
     growShFTree(root);
 
-    // Получаем словарь char - Huffman code
+    // Получаем словарь char - Shannon-Fano code
     map<char, string> chars_hcodes;
     string current_code = "";
     encode(root, current_code, chars_hcodes);
